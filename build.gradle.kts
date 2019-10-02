@@ -18,7 +18,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-	implementation("org.springframework.data:spring-data-r2dbc:1.0.0.M2")
+	implementation("org.springframework.data:spring-data-r2dbc:1.0.0.RC1")
 	implementation("org.springframework:spring-jdbc:5.2.0.M2")
 	implementation("org.springframework.boot:spring-boot-starter:2.2.0.M6")
 	implementation("org.springframework.boot:spring-boot-starter-webflux:2.2.0.M6")

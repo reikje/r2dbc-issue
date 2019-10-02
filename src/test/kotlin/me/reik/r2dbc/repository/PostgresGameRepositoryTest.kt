@@ -17,7 +17,7 @@ class PostgresGameRepositoryTest(@Autowired private val repository: GameReposito
 
     @BeforeEach
     fun setup() {
-        client.execute().sql("INSERT INTO games VALUES('foo', 'Game Foo')").then().block()
+        client.execute("INSERT INTO games VALUES('foo', 'Game Foo')").then().block()
     }
 
     @Test

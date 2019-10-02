@@ -23,8 +23,7 @@ class PostgresGameRepository(
     }
 
     override suspend fun find(id: String): Game? {
-        return client.execute()
-            .sql("SELECT * FROM games WHERE game_id = \$1")
+        return client.execute("SELECT * FROM games WHERE game_id = \$1")
             .bind(0, id)
             .asType<Game>()
             .fetch()
